@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en-US" box-sizing: border-box;>
+<head>
+<title>GV- screen printing</title>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="format-detection" content="telephone=no"/>
+</meta>
+<style>
+	html, body {
+        width: 100%;
+        height: 100%;
+       	margin: 0px;
+       	padding: 0px;       	
+		overflow-x: hidden;
+        box-sizing: border-box;
+		overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+		font-family: Garamond, sans-serif; 
+   	}
+	.header {
+		width: 100%;
+		height: 30% auto;
+		margin-top: 0px;
+		margin-left: 0px;
+		box-sizing: inherit;
+		display: inline-block;
+		background-color: #e7e0d5;
+		border-style: solid;
+		border-width: 6px;
+		border-color: #687e6c;
+		border-radius: 0px;
+		font-weight: bold;
+	}
+	.header > img {
+		width: 22%;
+		max-width: 25% auto;
+		width: auto\9;        /* For IE8 */ 
+		height: auto;
+		margin-left: 1%;
+		margin-top: 1%;
+		margin-right: 10%;
+		position: relative;
+	}
+	.header > h1 {
+		width: 100% auto;
+		height: auto;
+		margin-left: 20%;
+		margin-top: -12%;
+		position: relative;
+		text-align: center;
+		font-family: Baskerville;
+		font-weight: bold;
+		font-size: 55px;
+		text-shadow: -3px 7px 10px grey;
+	}
+	.address-banner {
+		width: 97%;
+		height: 70px auto;
+		margin-top: 5%;
+		margin-left: 1.5%;
+		margin-bottom: 1%;
+		padding: 0px;
+		position: relative;
+		box-sizing: inherit;
+		background-color: #e7e0d5;
+		border-style: solid;
+		border-width: 3px;
+		border-color: #687e6c;
+		border-radius: 0px;
+		text-align: center;
+		font-size: 45px;
+	}
+	.address-banner > h3 {
+		font-family: Garamond;
+		font-weight: bold;
+	}
+	.nav {
+        width: 100%;
+        height: auto;
+        margin-top: 0%;
+	   	padding-top: 2%;
+        padding-bottom: 1%;
+		display: inline-block;
+		box-sizing: inherit;
+		box-shadow: -5px 10px 10px -5px grey;
+        background-color: dimgrey;
+        color: white;
+		text-align: center;
+		font-weight: 500;
+	}
+	.button {
+		width: auto;
+		height: auto;
+		margin-left: 0%;
+		padding: 10px;
+    	border: none;
+    	color: white;
+		display: inline-block;
+    	text-decoration: none;
+    	font-size: 20px;
+    	cursor: pointer;
+		-webkit-transition-duration: 0.4s; /* Safari */
+		-moz-transition-duration:0.4s;
+    	transition-duration: 0.4s;
+		font-family: Baskerville;
+		font-weight: 600;
+	}
+	.button:hover {
+		background-color: #687E6C;
+	}
+	a:link, a:visited {
+		color: white;
+		text-decoration: none;
+	}
+	.screen-printing-body {
+		width: 96%;
+		height: auto;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 2%;
+		margin-bottom: 5%;
+		padding: 1%;
+		box-sizing: inherit;
+		display: inline-block;
+		-webkit-box-shadow: -5px 10px 10px -5px grey;
+		-moz-box-shadow: -5px 10px 10px -5px grey;
+		box-shadow: -5px 10px 10px -5px grey;
+		text-align: center;
+	}
+	.screen-printing-body > h3 {
+		font-size: 40px;
+	}
+	.screen-printing-body > p {
+		font-size: 24px;
+	}
+	.screen-printing-body > h4 {
+		font-size: 26px;
+	}
+	.prices {
+		width: 100%;
+		height: auto;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		font-size: 26px;
+	}
+	#hints {
+		font-size: 20px;
+	}
+	#red-text {
+		color: darkred;
+	}
+	#small-text {
+		font-size: 18px;
+	}
+	.footer {
+		width: 100%;
+		height: 50px auto;
+		box-sizing: inherit;
+		background-color: #e7e0d5;
+		border-style: solid;
+		border-width: 3px;
+		border-color: #687e6c;
+		border-radius: 0px;
+		text-align: center;
+		font-weight: 500;
+		text-decoration: none;
+	}
+	
+/* Responsive*/	
+@media (max-width: 900px) {
+	.header {
+		font-size: 40px;
+	}
+	.header > img {
+		 width: 35%;
+		 height: auto;
+		 margin-left: 30%;
+	 }
+	 .header > h1 {
+		 width: 100%;
+		 height: auto;
+		 margin: 0%;
+		 font-size: 30px;
+	}
+	.address-banner {
+		font-size: 18px;
+	}
+	.nav {
+		width: 100%;
+		height: 25% auto;
+		-webkit-column-count: 2; 
+    	-moz-column-count: 2;
+    	column-count: 2;
+		text-align: center;
+	}
+	.col-one {
+		width: 50%;
+	}
+	.col-two {
+		width: 50%;
+	}
+	.button {
+		width: 100%;
+		height: auto;
+		margin-left: 0%;
+		margin-top: 1%;
+		padding: 10px;
+		font-size: 16px;
+	}
+	.screen-printing-body {
+		width: 100%;
+		height: auto;
+		margin-top: 0%;
+		margin-left: 0%;
+		margin-right: 0%;
+		margin-bottom: 0%;
+		padding: 1%;
+		box-sizing: inherit;
+		display: inline-block;
+		-webkit-box-shadow: 0px 0px 0px 0px grey;
+		-moz-box-shadow: 0px 0px 0px 0px grey;
+		box-shadow: 0px 0px 0px 0px grey;
+		text-align: center;
+		box-sizing: inherit;
+	}
+	.screen-printing-body > h3 {
+		font-size: 30px;
+	}
+	.screen-printing-body > p {
+		font-size: 22px;
+	}
+	.screen-printing-body > h4 {
+		font-size: 24px;
+	}
+	.prices {
+		width: 100%;
+		height: auto;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		font-size: 24px;
+	}
+	#hints {
+		font-size: 18px;
+	}
+	#red-text {
+		color: darkred;
+	}
+	#small-text {
+		font-size: 16px;
+	}
+}
+@media (min-width: 1900px) {
+	.header > h1 {
+		margin-top: -12%;
+		font-size: 65px;
+	}
+	.address-banner {
+		margin-top: 6%;
+	}
+	.button {
+		font-size: 24px;
+	}
+    .screen-printing-body > h3 {
+		padding-left: 1%;
+		padding-right: 1%;
+		font-size: 46px;
+	}
+	.screen-printing-body > p {
+		padding-left: 1%;
+		padding-right: 1%;
+		font-size: 36px;
+	}
+	.screen-printing-body > h4 {
+		padding-left: 1%;
+		padding-right: 1%;
+		font-size: 40px;
+	}
+	.prices {
+		width: 100%;
+		height: auto;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		font-size: 33px;
+	}
+	#hints {
+		font-size: 26px;
+	}
+	#red-text {
+		color: darkred;
+	}
+	#small-text {
+		font-size: 22px;
+	}
+	
+</style>
+<body>
+<div class="header">
+	<img src="http://www.lucaspaskash.com/images/GV-weblogo.jpg" id="Graphic Logo" alt="Graphic Visions">
+	<h1>SIGNS, SCREEN PRINTING
+	<br>
+	& CUSTOM EMBROIDERY</h1>
+	<h3 class="address-banner">1314 W. Kirkwood Ave. Bloomington Indiana</h3>
+</div>
+<div class="nav">
+	    <a href="#" class="button col-one" id="">HOME</a>
+		<a href="#" class="button col-one" id="">CONTACT US</a>
+		<a href="#" class="button col-one" id="">SIGNS</a>
+		<a href="#" class="button col-two" id="">GALLERY</a>
+		<a href="#" class="button col-two" id="">CATALOGS</a>
+		<a href="#" class="button col-two" id="">PROMOTIONAL PRODUCTS</a>
+</div>
+<div class="screen-printing-body">
+    <h3>Screen Printing & Embroidery</h3>
+        <p>We offer a huge selection including the newest styles of T-shirts, sweat shirts, jackets, caps, totes, polo shirts, fleece, jerseys, aprons, and much more.</p>
+        <p>Our first price break begins at 24 pieces, you may choose to mix printed garmets.</p>
+        <p>For example: T-shirts, sweats, and a jacket.</p>
+        <p>We offer many different services, pricing is based upon quantity ordered, color of garment, color of imprint and locations imprinted.</p>
+        <div class="prices">
+            <p>Please contact us for details and prices.</p>
+            <p id="hints">Helpful hints save money on screen printed apparel:</p>
+            <p id="hints">- Order light colored garments</p>
+            <p id="hints">- Reduce the number of colors used in your logo</p>
+        <p id="hints">Discount prices start at 24 pieces, next price break at 48-144 and up.</p>
+        <p id="red-text">Please look inside our catalogs for all your apparel needs</p>
+        </div>
+        <h4>EMBROIDERY</h4>
+        <p id="hints">We can turn your screen printed logo into a embroidered logo for a more professional look.</p>
+        <p id="hints">Embroidered apparel is great for holiday gifts, corporate apparel, company uniforms, special events and for everyday wear.</p>
+        <br>
+        <p id="small-text">We offer fast turn around with exceptional quality</p>
+        <p id="small-text">Embroidered apparel allows for smaller quality orders.</p>
+
+</div>
+<div class="footer">
+	<p>1314 W. Kirkwood Ave. Bloomington Indiana 47404 Phone: 812-331-7446</p>
+</div>
+	
+	
+	
+	
+</body>
+<script>
+	
+	
+</script>
+</html>
